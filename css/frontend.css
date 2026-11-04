@@ -1,0 +1,106 @@
+/* rateIt public styles */
+.rateit {
+  clear: both;
+  margin: 1em 0;
+}
+.rateit h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.1em;
+}
+.rateit ul {
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+.rateit li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 1em;
+  white-space: nowrap;
+}
+.rateit-summary {
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.rateit-rank {
+  font-weight: bold;
+}
+
+/* Form */
+.rateit-linker {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4em;
+  margin: 0;
+  vertical-align: middle;
+}
+.rateit-linker.rateit-loading {
+  opacity: 0.6;
+}
+.rateit-message:empty {
+  display: none;
+}
+.rateit-message {
+  font-style: italic;
+}
+
+/* Classic: stars (inputs are in reverse order) */
+.rateit-stars {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+.rateit-stars input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.rateit-stars label {
+  cursor: pointer;
+  font-size: 1.4em;
+  line-height: 1;
+  color: #c8c8c8;
+}
+.rateit-stars label::before {
+  content: '\2605';
+}
+.rateit-stars label span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.rateit-stars input:checked ~ label {
+  color: #f5b301;
+}
+.rateit-linker:not(.rateit-voted) .rateit-stars label:hover,
+.rateit-linker:not(.rateit-voted) .rateit-stars label:hover ~ label {
+  color: #e08a00;
+}
+.rateit-stars input:focus-visible + label {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+.rateit-stars input:disabled + label {
+  cursor: default;
+}
+.rateit-js .rateit-submit {
+  display: none;
+}
+
+/* Twin and simple: buttons */
+.rateit-like::before {
+  content: '\1F44D\00A0';
+}
+.rateit-notlike::before {
+  content: '\1F44E\00A0';
+}
+.rateit-like:disabled,
+.rateit-notlike:disabled {
+  cursor: default;
+  opacity: 0.7;
+}

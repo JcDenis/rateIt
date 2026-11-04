@@ -1,21 +1,35 @@
-﻿<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <title>RateIt</title>
+  <meta charset="UTF-8">
+  <title>rateIt</title>
 </head>
-
 <body>
 
-<h3>Support</h3>
-<p>Si vous souhaitez plus d'aide ou apporter votre contribution à cette extension, voici quelques liens utiles.</p>
+<h4>Notation</h4>
+<p>Activez la notation et choisissez les types d'éléments qui peuvent être notés (billets, commentaires, catégories, mots-clés, événements, liens cinecturlink) depuis la configuration de l'extension.
+Trois styles sont disponibles : classique (le visiteur donne une note), double (le visiteur dit s'il aime ou non) et simple (le visiteur dit seulement s'il aime).</p>
+<p>La notation est affichée après le contenu des billets ou des commentaires selon les options des modules, avec le widget « Rate it : notation »,
+ou avec les balises de template (voir le template <code>rateit.html</code> qui peut être copié dans votre thème).</p>
+
+<h4>Votes</h4>
+<p>Les visiteurs sont identifiés par leur adresse IP, par un cookie ou par les deux. Les adresses IP ne sont pas enregistrées, seule une empreinte l'est.
+Cette page liste les éléments notés, cliquez sur un élément pour voir et supprimer ses votes.</p>
+
+<h4>Balises de template</h4>
 <ul>
-  <li><a href="http://dotclear.jcdenis.com/go/rateIt-support">Sujet sur le forum Dotclear</a></li>
-  <li><a href="http://lab.dotclear.org/wiki/plugin/rateIt">Page dédiée du lab Dotclear</a></li>
-  <li><a href="http://dotclear.jcdenis.com/go/rateIt">Billet dédié sur le blog de l'auteur</a></li>
+  <li><code>&lt;tpl:rateIt type="post" style="classic"&gt;</code> : bloc de notation de l'élément courant (attributs facultatifs)</li>
+  <li><code>&lt;tpl:rateItIf has_vote="1" user_voted="0" type="post" style="!twin"&gt;</code> : conditions</li>
+  <li><code>{{tpl:rateItTitle}}</code>, <code>{{tpl:rateItLinker}}</code>, <code>{{tpl:rateItAnchor}}</code></li>
+  <li><code>{{tpl:rateItNote}}</code>, <code>{{tpl:rateItFullnote}}</code>, <code>{{tpl:rateItQuotient}}</code>, <code>{{tpl:rateItMax}}</code>, <code>{{tpl:rateItMin}}</code></li>
+  <li><code>{{tpl:rateItTotal totaltext="1" none="aucun vote" one="un vote" more="%d votes"}}</code>, <code>{{tpl:rateItMaxCount}}</code>, <code>{{tpl:rateItMinCount}}</code></li>
 </ul>
+
+<h4>Liens</h4>
 <ul>
- <li>Traduit à l'aide du plugin <a href="http://dotclear.jcdenis.com/go/translater">translater</a></li>
- <li>Paquetage créé avec le plugin <a href="http://dotclear.jcdenis.com/go/pacKman">pacKman</a></li>
- <li>Utilise jQuery Star Rating Plugin v3.12 par <a href="http://www.fyneworks.com/jquery/star-rating/">Fyneworks</a></li>
+  <li><a href="https://github.com/JcDenis/rateIt">Dépôt Github</a></li>
+  <li><a href="https://github.com/JcDenis/rateIt/issues">Signaler un problème</a></li>
 </ul>
+
 </body>
 </html>

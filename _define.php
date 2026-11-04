@@ -1,30 +1,35 @@
 <?php
-# -- BEGIN LICENSE BLOCK ----------------------------------
-# This file is part of rateIt, a plugin for Dotclear 2.
-#
-# Copyright(c) 2014-2016 Nicolas Roudaire <nikrou77@gmail.com> http://www.nikrou.net
-#
-# Copyright (c) 2009-2010 JC Denis and contributors
-# jcdenis@gdwd.com
-#
-# Licensed under the GPL version 2.0 license.
-# A copy of this license is available in LICENSE file or at
-# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-# -- END LICENSE BLOCK ------------------------------------
+/**
+ * @file
+ * @brief       The plugin rateIt definition
+ * @ingroup     rateIt
+ *
+ * @defgroup    rateIt Plugin rateIt.
+ *
+ * Rating system for your blogs.
+ *
+ * @author      Jean-Christian Denis (author)
+ * @author      Nicolas Roudaire (contributor)
+ * @copyright   GPL-2.0 https://www.gnu.org/licenses/gpl-2.0.html
+ */
+declare(strict_types=1);
 
-if (!defined('DC_RC_PATH')){return;}
+if (!isset($this) || !is_object($this) || !method_exists($this, 'registerModule') || !isset($this->id) || !is_string($this->id)) {
+    return;
+}
 
 $this->registerModule(
-	/* Name */			"Rate it",
-	/* Description*/		"Rating system for your blogs",
-	/* Author */			"JC Denis, Nicolas Roudaire",
-	/* Version */			'2.2.2',
-	/* Properties */
-	array(
-		'permissions' => 'admin',
-		'type' => 'plugin',
-		'dc_min' => '2.7',
-		'support' => 'http://forum.dotclear.org/viewtopic.php?id=39801',
-		'details' => 'http://plugins.dotaddict.org/dc2/details/rateIt'
-		)
+    'Rate it',
+    'Rating system for your blogs',
+    'Jean-Christian Denis, Nicolas Roudaire',
+    '2026.11.05',
+    [
+        'requires'    => [['core', '2.39']],
+        'permissions' => 'My',
+        'type'        => 'plugin',
+        'support'     => 'https://github.com/JcDenis/' . $this->id . '/issues',
+        'details'     => 'https://github.com/JcDenis/' . $this->id . '/',
+        'repository'  => 'https://raw.githubusercontent.com/JcDenis/' . $this->id . '/master/dcstore.xml',
+        'date'        => '2026-11-05T00:00:00+00:00',
+    ]
 );

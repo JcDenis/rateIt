@@ -1,3 +1,21 @@
+rateIt 2026.11.05
+===========================================================
+* Rewrite plugin for Dotclear 2.39 (namespaces, Helper\Form, phpstan max)
+* Require Dotclear 2.39 and PHP 8.1
+* Keep votes table and template tags of old versions
+* Migrate old settings
+* Replace jQuery rating plugin and images by CSS stars and vanilla javascript
+* Vote without page reload, fallback to form without javascript
+* Store a hash of voters IP instead of plain IP (old votes are still recognized)
+* Validate votes (active module, existing item, note range, redirections)
+* Add votes management page (filters, detail, deletion)
+* Delete votes of deleted entries, comments and cinecturlink links
+* Add behavior rateItModules for third party modules
+* Add activityReport action
+* Remove galleries module (plugin gallery no longer exists)
+* Remove custom rating images and first image wildcard of rank widget
+* Update french translation and help
+
 rateIt 2.2.2 - 2016-11-07
 =========================
 * Fix issue that prevent to customize rateit.html template in theme.

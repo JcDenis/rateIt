@@ -1,0 +1,30 @@
+<tpl:rateIt>
+  <tpl:rateItIf style="classic">
+  <div class="rateit rateit-classic"{{tpl:rateItAnchor}}>
+    <h3>{{tpl:rateItTitle}}</h3>
+    <p class="rateit-summary">{{tpl:rateItFullnote}}</p>
+    {{tpl:rateItLinker}}
+    <ul>
+      <li>{{tpl:lang Note:}} {{tpl:rateItNote}}</li>
+      <li>{{tpl:lang Votes:}} {{tpl:rateItTotal}}</li>
+      <li>{{tpl:lang Higher:}} {{tpl:rateItMax}}</li>
+      <li>{{tpl:lang Lower:}} {{tpl:rateItMin}}</li>
+    </ul>
+  </div>
+  </tpl:rateItIf>
+
+  <tpl:rateItIf style="twin">
+  <div class="rateit rateit-twin"{{tpl:rateItAnchor}}>
+    <p class="rateit-summary">{{tpl:rateItMinCount}}</p>
+    {{tpl:rateItLinker}}
+    <p class="rateit-summary">{{tpl:rateItMaxCount}}</p>
+  </div>
+  </tpl:rateItIf>
+
+  <tpl:rateItIf style="simple">
+  <div class="rateit rateit-simple"{{tpl:rateItAnchor}}>
+    {{tpl:rateItLinker}}
+    <p class="rateit-summary">{{tpl:rateItMaxCount}}</p>
+  </div>
+  </tpl:rateItIf>
+</tpl:rateIt>
