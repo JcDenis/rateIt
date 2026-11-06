@@ -64,5 +64,6 @@ Other plugins can add types of rated items with behavior `rateItModules`
 * Jean-Christian Denis (author)
 * Nicolas Roudaire (2014-2016)
 * Pierre Van Glabeke
+* Claude (AI assistant by Anthropic)
 
 You are welcome to contribute to this code.
