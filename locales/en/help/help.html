@@ -2,34 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>rateIt</title>
+  <title>Rate it</title>
 </head>
 <body>
 
-<h4>Rating</h4>
-<p>Enable rating and select types of items that can be rated (entries, comments, categories, tags, events, cinecturlink links) from plugin configuration.
-Three styles are available: classic (visitor gives a note), twin (visitor says if he likes or not) and simple (visitor just says if he likes).</p>
-<p>Rating is displayed after entries content or comments according to modules options, with widget "Rate it: rating",
-or with template tags (see template <code>rateit.html</code> that can be copied to your theme).</p>
-
-<h4>Votes</h4>
-<p>Visitors are identified by their IP address, by a cookie or by both. IP addresses are not stored, only a hash of them.
-This page lists rated items, click on an item to see and delete its votes.</p>
-
-<h4>Template tags</h4>
-<ul>
-  <li><code>&lt;tpl:rateIt type="post" style="classic"&gt;</code>: rating block of current item (attributes are optional)</li>
-  <li><code>&lt;tpl:rateItIf has_vote="1" user_voted="0" type="post" style="!twin"&gt;</code>: conditions</li>
-  <li><code>{{tpl:rateItTitle}}</code>, <code>{{tpl:rateItLinker}}</code>, <code>{{tpl:rateItAnchor}}</code></li>
-  <li><code>{{tpl:rateItNote}}</code>, <code>{{tpl:rateItFullnote}}</code>, <code>{{tpl:rateItQuotient}}</code>, <code>{{tpl:rateItMax}}</code>, <code>{{tpl:rateItMin}}</code></li>
-  <li><code>{{tpl:rateItTotal totaltext="1" none="no rate" one="one rate" more="%d rates"}}</code>, <code>{{tpl:rateItMaxCount}}</code>, <code>{{tpl:rateItMinCount}}</code></li>
-</ul>
-
-<h4>Links</h4>
-<ul>
-  <li><a href="https://github.com/JcDenis/rateIt">Github repository</a></li>
-  <li><a href="https://github.com/JcDenis/rateIt/issues">Issues</a></li>
-</ul>
+<dl>
+  <dt>Rated items</dt>
+  <dd>This page lists the items that received at least one vote. Filter by type, choose the order, then click an item to see its votes.
+  To delete all votes of some items, check them then use the button below the list.</dd>
+  <dt>Settings</dt>
+  <dd>Rating is enabled, and the types of items that can be rated are chosen, from the plugin configuration (link at the bottom of the page).</dd>
+</dl>
 
 </body>
 </html>

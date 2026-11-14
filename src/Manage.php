@@ -205,7 +205,7 @@ class Manage
                 ->class('info')
                 ->text(__('There is no rating for this request at this time.'))
                 ->render();
-            Page::helpBlock(My::id());
+            Page::helpBlock(My::id() . '-index');
             Page::closeModule();
 
             return;
@@ -282,7 +282,7 @@ class Manage
             ->render() .
         $pager->getLinks();
 
-        Page::helpBlock(My::id());
+        Page::helpBlock(My::id() . '-index');
         Page::closeModule();
     }
 
@@ -374,7 +374,7 @@ class Manage
             (new Link())->href(My::manageUrl())->class('back')->text(__('Back to rated items list')),
         ])->render();
 
-        Page::helpBlock(My::id());
+        Page::helpBlock(My::id() . '-detail');
         Page::closeModule();
     }
 }
