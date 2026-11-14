@@ -12,6 +12,8 @@ _rateIt_ is a plugin for the open-source web publishing software called [Dotclea
 > Rating system for your blogs: entries, comments, categories,
 tags, events (plugin eventHandler) and links (plugin cinecturlink2).
 
+A [user guide in French](https://github.com/JcDenis/rateIt/blob/master/docs/fr/utilisation.md) is available.
+
 ## REQUIREMENTS
 
 * Dotclear 2.39
@@ -54,6 +56,7 @@ Other plugins can add types of rated items with behavior `rateItModules`
 
 ## LINKS
 
+* [User guide (in French)](https://github.com/JcDenis/rateIt/blob/master/docs/fr/utilisation.md)
 * [License](https://github.com/JcDenis/rateIt/blob/master/LICENSE)
 * [Packages & details](https://github.com/JcDenis/rateIt/releases)
 * [Sources & contributions](https://github.com/JcDenis/rateIt)
