@@ -1,3 +1,9 @@
+rateIt 2026.11.15
+===========================================================
+* Add Claude to contributors
+* [docs] Add a user guide in French, with screenshots
+* [docs] Add the admin help in English and French
+
 rateIt 2026.11.05
 ===========================================================
 * Rewrite plugin for Dotclear 2.39 (namespaces, Helper\Form, phpstan max)
