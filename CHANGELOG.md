@@ -1,6 +1,5 @@
 rateIt 2026.11.15
 ===========================================================
-* Add Claude to contributors
 * [docs] Add a user guide in French, with screenshots
 * [docs] Add the admin help in English and French
 
