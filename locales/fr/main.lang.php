@@ -1,12 +1,11 @@
 <?php
 declare(strict_types=1);
 
-// Language: Français
-// Module: rateIt - 2026.11.05
-// Date: 2026-11-04 23:24:08
-// Author: Jean-Christian Denis, contact@jcdenis.fr
-// Translated with Translater - 2026.11.04
-
+/**
+ * @package Dotclear
+ *
+ * @copyright Olivier Meunier & Association Dotclear
+ */
 #
 # DOT NOT MODIFY THIS FILE !
 #
@@ -54,11 +53,11 @@ L10n::$locales['There is no vote at this time.'] = 'Il n\'y a aucun vote pour le
 L10n::$locales['There is only one vote at this time.'] = 'Il n\'y a qu\'un seul vote pour le moment.';
 L10n::$locales['There is a total of %s votes on this blog.'] = 'Il y a un total de %s votes sur ce blog.';
 L10n::$locales['All'] = 'Tous';
-L10n::$locales['Type:'] = 'Type :';
+L10n::$locales['Type:'] = 'Type :';
 L10n::$locales['Last vote'] = 'Dernier vote';
 L10n::$locales['Note'] = 'Note';
 L10n::$locales['Votes'] = 'Votes';
-L10n::$locales['Order by:'] = 'Trier par :';
+L10n::$locales['Order by:'] = 'Trier par :';
 L10n::$locales['Apply'] = 'Appliquer';
 L10n::$locales['There is no rating for this request at this time.'] = 'Il n\'y a aucune note pour cette demande pour le moment.';
 L10n::$locales['Select this item'] = 'Sélectionner cet élément';
@@ -92,7 +91,7 @@ L10n::$locales['Events'] = 'Événements';
 L10n::$locales['Rate this event'] = 'Notez cet événement';
 L10n::$locales['Show rating on event page'] = 'Afficher la notation sur la page d\'un événement';
 L10n::$locales['Show rating on events of events list page'] = 'Afficher la notation sur les événements de la liste des événements';
-L10n::$locales['Entries'] = 'Billets';
+L10n::$locales['Entries'] = 'Entrées';
 L10n::$locales['Rate this entry'] = 'Notez ce billet';
 L10n::$locales['Show rating on entry page'] = 'Afficher la notation sur la page d\'un billet';
 L10n::$locales['Show rating on entries of home page'] = 'Afficher la notation sur les billets de la page d\'accueil';
@@ -122,7 +121,7 @@ L10n::$locales['List of top rated items'] = 'Liste des éléments les mieux not�
 L10n::$locales['Top rated entries'] = 'Billets les mieux notés';
 L10n::$locales['Length:'] = 'Nombre :';
 L10n::$locales['Positive votes (for simple/twin mode)'] = 'Votes positifs (pour les modes simple et double)';
-L10n::$locales['Sort:'] = 'Ordre :';
+L10n::$locales['Sort:'] = 'Ordre :';
 L10n::$locales['Ascending'] = 'Croissant';
 L10n::$locales['Descending'] = 'Décroissant';
 L10n::$locales['Text (use wildcards %s):'] = 'Texte (utiliser les jokers %s) :';

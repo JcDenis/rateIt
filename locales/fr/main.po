@@ -187,7 +187,7 @@ msgstr "Tous"
 #: src/Manage.php:187
 #: src/Widgets.php:61
 msgid "Type:"
-msgstr "Type :"
+msgstr "Type :"
 
 #: src/Manage.php:190
 #: src/Manage.php:269
@@ -211,7 +211,7 @@ msgstr "Votes"
 #: src/Manage.php:195
 #: src/Widgets.php:63
 msgid "Order by:"
-msgstr "Trier par :"
+msgstr "Trier par :"
 
 #: src/Manage.php:196
 msgid "Apply"
@@ -350,7 +350,7 @@ msgstr "Afficher la notation sur les événements de la liste des événements"
 
 #: src/Module/Post.php:23
 msgid "Entries"
-msgstr "Billets"
+msgstr "Entrées"
 
 #: src/Module/Post.php:28
 msgid "Rate this entry"
@@ -473,7 +473,7 @@ msgstr "Votes positifs (pour les modes simple et double)"
 
 #: src/Widgets.php:69
 msgid "Sort:"
-msgstr "Ordre :"
+msgstr "Ordre :"
 
 #: src/Widgets.php:70
 msgid "Ascending"
