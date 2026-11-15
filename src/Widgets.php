@@ -59,7 +59,7 @@ class Widgets
             )
             ->addTitle(__('Top rated entries'))
             ->setting('type', __('Type:'), 'post', 'combo', My::modulesCombo())
-            ->setting('limit', __('Length:'), 3, 'combo', [1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 10 => 10, 15 => 15, 20 => 20])
+            ->setting('limit', __('Length:'), 3, 'number')
             ->setting('sortby', __('Order by:'), 'rateit_avg', 'combo', [
                 __('Note')                                 => 'rateit_avg',
                 __('Votes')                                => 'rateit_total',
