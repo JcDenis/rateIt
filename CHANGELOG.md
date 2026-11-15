@@ -1,3 +1,8 @@
+rateIt 2026.11.15.1 - 2026.11.15
+===========================================================
+* [lang] Do not override core translations
+* [fix] Widget length setting as number (PHPStan with Dotclear 2.40 types)
+
 rateIt 2026.11.15
 ===========================================================
 * [docs] Add a user guide in French, with screenshots
