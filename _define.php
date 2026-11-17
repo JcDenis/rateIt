@@ -22,7 +22,7 @@ $this->registerModule(
     'Rate it',
     'Rating system for your blogs',
     'Jean-Christian Denis, Nicolas Roudaire',
-    '2026.11.15.1',
+    '2026.11.17',
     [
         'requires'    => [['core', '2.39']],
         'permissions' => 'My',
@@ -30,6 +30,6 @@ $this->registerModule(
         'support'     => 'https://github.com/JcDenis/' . $this->id . '/issues',
         'details'     => 'https://github.com/JcDenis/' . $this->id . '/',
         'repository'  => 'https://raw.githubusercontent.com/JcDenis/' . $this->id . '/master/dcstore.xml',
-        'date'        => '2026-11-15T15:16:46+00:00',
+        'date'        => '2026-11-17T20:39:08+00:00',
     ]
 );
