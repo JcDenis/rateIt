@@ -37,6 +37,10 @@ Rating is displayed after entries content or after comments
 according to options, with widget _Rate it: rating_ or with template tags.
 Widget _Rate it: top rating_ lists top rated items.
 
+With the plugin [ClaudetteMcp](https://github.com/JcDenis/ClaudetteMcp), an AI assistant connected to the blog
+can list the rated items with their notes (`list_ratings`, read only, without the voters),
+with the permissions of a content administrator. ClaudetteMcp is not required by _rateIt_.
+
 The default template _rateit.html_ can be copied to your theme to customize it.
 Template tags are the same as old versions:
 

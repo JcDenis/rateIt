@@ -17,6 +17,9 @@ Required Dotclear and PHP versions: see `_define.php`.
 
 ## Structure
 
+* `src/ClaudetteMcp/ListRatings.php`: tool `list_ratings` for the plugin ClaudetteMcp (read only, never required),
+  registered in `src/Frontend.php` with the behavior `ClaudetteMcpAddTool`. Use `Module::item()`, not `adminItem()`:
+  admin URLs throw out of backend.
 * `src/ActivityReportAction.php`: add rating actions to the plugin activity report.
 * `src/Backend.php`: admin side: menu entry, favorites, behaviors registration.
 * `src/Config.php`: configuration page of the module (plugins manager).
@@ -46,7 +49,7 @@ Required Dotclear and PHP versions: see `_define.php`.
 * Database table `rateit`.
 * URL handlers: `rateit_vote`.
 * Widgets: `rateit`, `rateitrank`.
-* Behaviors used: `initWidgets`, `adminDashboardFavoritesV2`, `publicBeforeDocumentV2`, `publicHeadContent`, `publicEntryAfterContent`, `publicCommentAfterContent`, `adminBeforePostDelete`, `adminBeforePostsDelete`, `adminBeforeCommentDelete`, `adminBeforeCommentsDelete`.
+* Behaviors used: `ClaudetteMcpAddTool`, `initWidgets`, `adminDashboardFavoritesV2`, `publicBeforeDocumentV2`, `publicHeadContent`, `publicEntryAfterContent`, `publicCommentAfterContent`, `adminBeforePostDelete`, `adminBeforePostsDelete`, `adminBeforeCommentDelete`, `adminBeforeCommentsDelete`.
 
 ## Pitfalls
 

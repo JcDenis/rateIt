@@ -12,6 +12,7 @@ rateIt permet aux visiteurs de votre blog de noter des éléments : billets, com
 * [Les widgets](#les-widgets)
 * [Personnaliser l'affichage](#personnaliser-laffichage)
 * [Consulter et supprimer les votes](#consulter-et-supprimer-les-votes)
+* [Avec un assistant IA](#avec-un-assistant-ia)
 * [À savoir](#à-savoir)
 
 ## Activer la notation
@@ -162,6 +163,15 @@ Pour supprimer :
 * seulement certains votes : cochez-les dans le détail, puis cliquez sur *Supprimer les votes sélectionnés*.
 
 La suppression est immédiate et ne peut pas être annulée.
+
+## Avec un assistant IA
+
+Avec le plugin [ClaudetteMcp](https://github.com/JcDenis/ClaudetteMcp), un assistant IA connecté au blog peut consulter les notes
+avec l'outil `list_ratings`, si vous êtes administrateur de contenu : les éléments notés (billets, commentaires, catégories…)
+avec leur note moyenne et leur nombre de votes, par exemple pour savoir quels billets plaisent le plus.
+
+L'assistant ne fait que lire : il ne vote pas et ne supprime pas de vote, et les votants ne lui sont jamais identifiés.
+_ClaudetteMcp_ n'est pas nécessaire au fonctionnement de _rateIt_.
 
 ## À savoir
 
