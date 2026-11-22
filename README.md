@@ -39,7 +39,7 @@ Widget _Rate it: top rating_ lists top rated items.
 
 With the plugin [ClaudetteMcp](https://github.com/JcDenis/ClaudetteMcp), an AI assistant connected to the blog
 can list the rated items with their notes (`list_ratings`, read only, without the voters),
-with the permissions of a content administrator. ClaudetteMcp is not required by _rateIt_.
+with the permissions of a content administrator. ClaudetteMcp is optional for _rateIt_ (version 0.5 or later).
 
 The default template _rateit.html_ can be copied to your theme to customize it.
 Template tags are the same as old versions:

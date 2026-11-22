@@ -17,7 +17,7 @@ Required Dotclear and PHP versions: see `_define.php`.
 
 ## Structure
 
-* `src/ClaudetteMcp/ListRatings.php`: tool `list_ratings` for the plugin ClaudetteMcp (read only, never required),
+* `src/ClaudetteMcp/ListRatings.php`: tool `list_ratings` for the plugin ClaudetteMcp (read only, optional dependency `ClaudetteMcp?` in `requires`),
   registered in `src/Frontend.php` with the behavior `ClaudetteMcpAddTool`. Use `Module::item()`, not `adminItem()`:
   admin URLs throw out of backend.
 * `src/ActivityReportAction.php`: add rating actions to the plugin activity report.
