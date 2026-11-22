@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Dotclear\Plugin\rateIt;
 
+use ArrayObject;
 use Dotclear\App;
 use Dotclear\Helper\Process\TraitProcess;
 
@@ -38,6 +39,11 @@ class Frontend
         if (!self::status()) {
             return false;
         }
+
+        // Tool for AI assistants connected to the blog with the plugin ClaudetteMcp (never required)
+        App::behavior()->addBehavior('ClaudetteMcpAddTool', function (ArrayObject $tools): void {
+            $tools->append(new ClaudetteMcp\ListRatings());
+        });
 
         // Widgets are registered even if plugin is not active (they check it)
         App::behavior()->addBehavior('initWidgets', Widgets::init(...));
