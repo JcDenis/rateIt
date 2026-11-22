@@ -22,7 +22,7 @@ $this->registerModule(
     'Rate it',
     'Rating system for your blogs',
     'Jean-Christian Denis, Nicolas Roudaire',
-    '2026.11.17',
+    '2026.11.23',
     [
         'requires'    => [['core', '2.39']],
         'permissions' => 'My',

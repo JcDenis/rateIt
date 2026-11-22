@@ -1,3 +1,8 @@
+rateIt 2026.11.23
+===========================================================
+* [new] Ratings for an AI assistant connected with ClaudetteMcp (list_ratings)
+* [new] Family of the ClaudetteMcp tools, for the keys limited to some families
+
 rateIt 2026.11.17
 ===========================================================
 * [fix] Version format
